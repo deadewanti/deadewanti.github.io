@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Layout</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffb3df;
+            color: #333;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ffbde3;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 12px 25px;
+            background-color: #007BFF;
+            color: rgb(250, 186, 216);
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+               #home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:rgb(238, 149, 198);
+            padding: 80px 20px;
+            text-align: left;
+        }
+
+        #home img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(248, 184, 210, 0.1);
+        }
+
+        #features {
+            background-color: #fdc7f0;
+        }
+
+        #portfolio img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item {
+            margin-bottom: 30px;
+        }
+
+        #contact form input,
+        #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #f1a7d5;
+        }
+
+
+        #portfolio img {
+    width: 250px; 
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Center align items */
+}
+
+
+        #contact form button {
+            background-color: #007BFF;
+            color: rgb(253, 201, 230);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div style="text-align: left; padding-left: 20px;">
+        <h1 style="display: inline;">Selamat Datang</h1>
+        <nav style="display: inline;">
+            <a href="#home">Home </a>
+            <a href="#features">Features</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about-us">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </div>
+</div>
+
+
+    <!-- Home Section -->
+    <section id="home">
+        <div style="flex: 1; padding-right: 20px;">
+            <h2>hallo Semuanya 👋 </h2>
+            <p>Saya Dhea Dewanti </p>
+            <button>Explore Now</button>
+        </div>
+        <div style="flex: 1;">
+            <img src="cici.jpg" alt="Welcome Image">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Our Features</h2>
+        <p>Discover the amazing features we offer to make your life easier.</p>
+        <div style="display: flex; justify-content: space-around;">
+            <div>
+                <h3>Feature 1</h3>
+                <p>Gimana nih di bidang IT seru bukan </p>
+            </div>
+            <div>
+                <h3>Feature 2</h3>
+                <p>Nih ya kata aku di bidang IT itu seru loh tapi yang ga serunya itu pas eror aduhhh.</p>
+            </div>
+            <div>
+                <h3>Feature 3</h3>
+                <p>Ayo Join di bidang IT  pasti kalian suka di bidang IT</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <p>Ini Projek udah saya buat .</p>
+        <div style="display: flex; justify-content: space-around;">
+            <div class="portfolio-item">
+                <img src="jualan.png" alt="Portfolio 1" />
+                <h4>Project 1</h4>
+            </div>
+            <div class="portfolio-item">
+                <img src="koleksi.png" alt="Portfolio 2" />
+                <h4>Project 2</h4>
+            </div>
+            <div class="portfolio-item">
+                <img src="web.png" alt="Portfolio 3" />
+                <h4>Project 3</h4>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" style="background-color: #f0f0f0;">
+        <h2>About Us</h2>
+        <p>Ini Aplikasi yang yang saya suka </p>
+        <div style="margin-top: 20px;">
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com" target="_blank" style="margin-right: 15px;">
+                <img src="tiktok.png" alt="TikTok" style="width: 40px;">
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com" target="_blank" style="margin-right: 15px;">
+                <img src="ig.png" alt="Instagram" style="width: 40px;">
+            </a>
+            <!-- Google -->
+            <a href="https://www.google.com" target="_blank" style="margin-right: 15px;">
+                <img src="gugel.png" alt="Google" style="width: 40px;">
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://www.whatsapp.com" target="_blank" style="margin-right: 15px;">
+                <img src="wa.png" alt="WhatsApp" style="width: 40px;">
+            </a>
+            <!-- Shopee -->
+            <a href="https://www.shopee.com" target="_blank" style="margin-right: 15px;">
+                <img src="shopee.png" alt="Shopee" style="width: 40px;">
+            </a>
+            <!-- CapCut -->
+            <a href="https://www.capcut.com" target="_blank" style="margin-right: 15px;">
+                <img src="capcut.png" alt="CapCut" style="width: 40px;">
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@website.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Main St, Anytown, USA</p>
+
+        <!-- Contact Form -->
+        <form action="submit_form.php" method="post" style="margin-top: 20px; max-width: 400px; margin: 0 auto;">
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
